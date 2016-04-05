@@ -1,0 +1,3 @@
+[submodule "build/dist"]
+	path = build/dist
+	url = git@github.com:britonet/Pub.git
