@@ -57,6 +57,10 @@ gulp.task('default', ['build-dev', 'watch']);
 /**
  * Manual Build
  */
+var bases = {
+    buildDist: 'build/dist/'
+};
+
 gulp.task('stellar-build-sdk', ['clean'], function() {
   return gulp.src(sdk_files)
     .pipe(concat('sdk.js'))
