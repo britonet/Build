@@ -3,32 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-
   <link rel="stylesheet" href="style.css">
+  <script src="jquery.js"></script>
 </head>
 <body>
-  
+
   <div class="container">
+
     <ul>
-      <li class="waiting">
+      <li class="pending">
         <div class="duration">4 hours 38 minutes</div>
         <div class="title">Reactive Angular 2 with ngrx</div>
         <strong class="author">Lukas Ruebbelke</strong><span>Author of AngularJS in Action</span>
         <div class="excerpt">Learn how to build functional, reactive web applications in Angular 2 with a Redux inspired library, @ngrx/store and observables from Rx.js.</div>
       </li>
-      <li class="waiting">
+      <li class="pending">
         <div class="duration">9 hours 54 minutes</div>
         <div class="title">Build Web Apps with Angular 2</div>
         <strong class="author">Lukas Ruebbelke</strong><span>Author of AngularJS in Action</span>
         <div class="excerpt">Angular 2 is an incredibly powerful evolution of AngularJS. We are going discover why Angular 2 is half the framework with twice the power!</div>
       </li>
-      <li class="waiting">
+      <li class="pending">
         <div class="duration">6 hours 22 minutes</div>
         <div class="title">Rethinking Asynchronous JavaScript</div>
         <strong class="author">Kyle Simpson</strong><span>You Don't Know JS</span>
         <div class="excerpt">Effective asynchronous JavaScript means knowing various different patterns and weaving them together to write readable and understandable code. </div>
       </li>
-      <li class="waiting">
+      <li class="pending">
         <div class="duration">3 hours 10 minutes</div>
         <div class="title">Functional-Lite JavaScript Course</div>
         <strong class="author">Kyle Simpson</strong><span>You Don't Know JS</span>
@@ -77,9 +78,9 @@
         <strong class="author">Justin Searls</strong><span>Unit Testing</span>
         <div class="excerpt">Learn to write testable code, testing types and strategies that will increase your ability to test JavaScript on the client and server (Node.js).</div>
       </li>
-      <li class="waiting">
+      <li class="pending">
         <div class="duration">9 hours 36 minutes</div>
-        <div class="title">Asynchronous JavaScript Tutorial (with Rx.js </div>
+        <div class="title">Asynchronous JavaScript Tutorial with Rx.js Observables</div>
         <strong class="author">Jafar Husain</strong><span>Netflix</span>
         <div class="excerpt">Learning how to build and manage asynchronous programs is perhaps the most important part of becoming an effective JavaScript programmer.</div>
       </li>
@@ -89,7 +90,7 @@
         <strong class="author">Kyle Simpson</strong><span>You Don't Know JS</span>
         <div class="excerpt">Before you use a framework, learn how to organize the different bits of JavaScript (modularizing, decoupling, etc) with this advanced JavaScript course.</div>
       </li>
-      <li class="waiting">
+      <li class="pending">
         <div class="duration">3 hours 20 minutes</div>
         <div class="title">Coercion in JavaScript</div>
         <strong class="author">Kyle Simpson</strong><span>You Don't Know JS</span>
@@ -125,7 +126,7 @@
         <strong class="author">Justine Jordan</strong><span>Litmus</span>
         <div class="excerpt">Learn the importance of HTML email and prove that building beautiful, responsive email campaigns isn’t as scary as you thought.</div>
       </li>
-      <li class="waiting">
+      <li class="pending">
         <div class="duration">9 hours 4 minutes</div>
         <div class="title">Advanced JS Fundamentals to jQuery & Pure DOM </div>
         <strong class="author">Justin Meyer</strong><span>Bitovi, CanJS</span>
@@ -167,7 +168,7 @@
         <strong class="author">Brian Holt</strong><span>Netflix</span>
         <div class="excerpt">In this advanced JavaScript training, Brian Holt (Reddit) gives a treatise on each of the four frameworks to help you decide which one is best for you.</div>
       </li>
-      <li class="waiting">
+      <li class="pending">
         <div class="duration">6 hours minutes</div>
         <div class="title">Hardcore Functional Programming in JavaScript</div>
         <strong class="author">Brian Lonsdorf</strong><span>SFJS Co-Organizer</span>
@@ -233,7 +234,7 @@
         <strong class="author">Estelle Weyl</strong><span>HTML5 & CSS3 in the Real World</span>
         <div class="excerpt">Learn how deep the CSS3 rabbit hole goes from transitions and animations to generated content in this jam-packed video training course.</div>
       </li>
-      <li class="waiting">
+      <li class="pending">
         <div class="duration">3 hours 52 minutes</div>
         <div class="title">Web UI Architecture</div>
         <strong class="author">Garann Means</strong><span>Engineer at Etsy</span>
@@ -245,13 +246,13 @@
         <strong class="author">Bill Scott</strong><span>Sr. Director of UX at PayPal</span>
         <div class="excerpt">Bill Scott, Sr. Director at PayPal, teaches making great UX experiences by applying lean startup principles to UI engineering.</div>
       </li>
-      <li class="waiting">
+      <li class="pending">
         <div class="duration">4 hours 30 minutes</div>
         <div class="title">Responsive Web Design Course</div>
         <strong class="author">Ben Callahan</strong><span>Design Responsively</span>
         <div class="excerpt">Ben Callahan leads you through this responsive web design tutorial step by step, using RWD patterns and coding with media queries and responsive CSS.</div>
       </li>
-      <li class="waiting">
+      <li class="pending">
         <div class="duration">5 hours 1 minutes</div>
         <div class="title">Master Website Performance Optimization</div>
         <strong class="author">Kyle Simpson</strong><span>You Don't Know JS</span>
@@ -269,13 +270,13 @@
         <strong class="author">Misko Hevery</strong><span>AngularJS Creator</span>
         <div class="excerpt">Misko, the creator of AngularJS (by Google), gives us an overview of how to write testable code and what makes code hard to test.</div>
       </li>
-      <li class="waiting">
+      <li class="pending">
         <div class="duration">2 hours 36 minutes</div>
         <div class="title">Introduction to HTML5 and CSS3</div>
         <strong class="author">Christopher Schmitt</strong><span>HTML5 Cookbook</span>
         <div class="excerpt">Christopher Schmitt, author of HTML5 Cookbook, covers HTML5 features such as audio, video and geolocation and then dives into many of CSS3′s features.</div>
       </li>
-      <li class="waiting">
+      <li class="pending">
         <div class="duration">3 hours 26 minutes</div>
         <div class="title">jQuery Plugins and jQuery UI</div>
         <strong class="author">Scott Gonzalez</strong><span>jQuery UI Lead</span>
