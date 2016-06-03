@@ -2,14 +2,325 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document Title</title>
+  <title>Document</title>
+
+  <style>
+    * { box-sizing: border-box; }
+    html, body { 
+      width: 100%;
+      margin: 0; padding: 0; 
+      background-color: #e2e2e2;
+    }
+    .container { 
+      width: 100vw; margin: 0 auto;
+      padding: 20px;
+    }
+    ul { 
+      width: 100%;
+      background-color: #e2e2e2;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    ul > li {
+      width: 20vw;
+      padding: 20px;
+      margin: 20px 0;
+      background-color: #fff;
+      min-height: 40vh;
+      display: inline-block;
+      vertical-align: top;
+    }
+  </style>
 </head>
 <body>
-  <h2>This is the Heading</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quod dolorem adipisci perferendis laborum, impedit maxime necessitatibus porro dolorum. Ea dicta, eveniet! Autem qui nemo officia, accusamus deleniti earum sint!</p>
-
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptatibus a reprehenderit quisquam illum excepturi. Alias beatae ab natus, obcaecati sapiente ipsum non, fugiat ea quaerat cupiditate fuga? Nulla, nihil!</p>
   
-  <script src="src/stellar.js"></script>
+  <div class="container">
+    <ul>
+      <li>
+        <div class="duration">4 hours 38 minutes</div>
+        <div class="title">Reactive Angular 2 with ngrx</div>
+        <strong class="author">Lukas Ruebbelke</strong><span>Author of AngularJS in Action</span>
+        <div class="excerpt">Learn how to build functional, reactive web applications in Angular 2 with a Redux inspired library, @ngrx/store and observables from Rx.js.</div>
+      </li>
+      <li>
+        <div class="duration">9 hours 54 minutes</div>
+        <div class="title">Build Web Apps with Angular 2</div>
+        <strong class="author">Lukas Ruebbelke</strong><span>Author of AngularJS in Action</span>
+        <div class="excerpt">Angular 2 is an incredibly powerful evolution of AngularJS. We are going discover why Angular 2 is half the framework with twice the power!</div>
+      </li>
+      <li>
+        <div class="duration">6 hours 22 minutes</div>
+        <div class="title">Rethinking Asynchronous JavaScript</div>
+        <strong class="author">Kyle Simpson</strong><span>You Don't Know JS</span>
+        <div class="excerpt">Effective asynchronous JavaScript means knowing various different patterns and weaving them together to write readable and understandable code. </div>
+      </li>
+      <li>
+        <div class="duration">3 hours 10 minutes</div>
+        <div class="title">Functional-Lite JavaScript Course</div>
+        <strong class="author">Kyle Simpson</strong><span>You Don't Know JS</span>
+        <div class="excerpt">Practical take on functional programming so you can techniques like Pure Functions and Recursion to improve your programming today.</div>
+      </li>
+      <li>
+        <div class="duration">2 hours 53 minutes</div>
+        <div class="title">Advanced SVG Animation</div>
+        <strong class="author">Sarah Drasner</strong><span>Trulia</span>
+        <div class="excerpt">Make resolution-independent, scalable, complex animations for a myriad of use cases across the web with SVG</div>
+      </li>
+      <li>
+        <div class="duration">8 hours 44 minutes</div>
+        <div class="title">Ember 2.x Video Tutorial</div>
+        <strong class="author">Mike North</strong><span>Ember</span>
+        <div class="excerpt">Become a master in Ember.js and be well-suited to build complex and highly interctive apps with this course.</div>
+      </li>
+      <li>
+        <div class="duration">10 hours 18 minutes</div>
+        <div class="title">API Design with Node.js Training</div>
+        <strong class="author">Scott Moss</strong><span>Udacity and Ex-Hack Reactor</span>
+        <div class="excerpt">Learn to build a fully functional API with Node.js and have the skills to build your own APIs.</div>
+      </li>
+      <li>
+        <div class="duration">6 hours 9 minutes</div>
+        <div class="title">Component-Based Architecture in AngularJS 1.x and ES6</div>
+        <strong class="author">Scott Moss</strong><span>Udacity and Ex-Hack Reactor</span>
+        <div class="excerpt">Master building web apps in Angular 1.x and ES6. This is the best angular training. After doing our course you will be able to build 1.x apps and transition 
+      </li>
+      <li>
+        <div class="duration">8 hours 37 minutes</div>
+        <div class="title">Building Web Apps (with React, Ampersand, ES6 and Webpack)</</div>
+        <strong class="author">Henrik Joreteg</strong><span>Ampersand.js</span>
+        <div class="excerpt">Everything you need to know about web app development. Build an app from scratch using React, Ampersand, ES6 (ES2015), and Webpack.  </div>
+      </li>
+      <li>
+        <div class="duration">10 hours 3 minutes</div>
+        <div class="title">Meteor</div>
+        <strong class="author">Chris Mather</strong><span>EventedMind</span>
+        <div class="excerpt">Built by a team of MIT engineers, Meteor is a full stack open source framework for building web and mobile apps in pure JavaScript.</div>
+      </li>
+      <li>
+        <div class="duration">4 hours 46 minutes</div>
+        <div class="title">Unit Testing JavaScript (with CoffeeScript)</div>
+        <strong class="author">Justin Searls</strong><span>Unit Testing</span>
+        <div class="excerpt">Learn to write testable code, testing types and strategies that will increase your ability to test JavaScript on the client and server (Node.js).</div>
+      </li>
+      <li>
+        <div class="duration">9 hours 36 minutes</div>
+        <div class="title">Asynchronous JavaScript Tutorial (with Rx.js </div>
+        <strong class="author">Jafar Husain</strong><span>Netflix</span>
+        <div class="excerpt">Learning how to build and manage asynchronous programs is perhaps the most important part of becoming an effective JavaScript programmer.</div>
+      </li>
+      <li>
+        <div class="duration">5 hours 11 minutes</div>
+        <div class="title">Learn Organizing JavaScript Functionality</div>
+        <strong class="author">Kyle Simpson</strong><span>You Don't Know JS</span>
+        <div class="excerpt">Before you use a framework, learn how to organize the different bits of JavaScript (modularizing, decoupling, etc) with this advanced JavaScript course.</div>
+      </li>
+      <li>
+        <div class="duration">3 hours 20 minutes</div>
+        <div class="title">Coercion in JavaScript</div>
+        <strong class="author">Kyle Simpson</strong><span>You Don't Know JS</span>
+        <div class="excerpt">Most developers cite coercion and the == operator as black magic. By learning coercion you'll learn important clarifications in style and readability of JS.</div>
+      </li>
+      <li>
+        <div class="duration">2 hours 46 minutes</div>
+        <div class="title">Introductory Course to Javascript Programming</div>
+        <strong class="author">Kyle Simpson</strong><span>You Don't Know JS</span>
+        <div class="excerpt">Master JavaScript with our online training and learn one of the easiest languages to get started with and one of the most powerful.</div>
+      </li>
+      <li>
+        <div class="duration">4 hours 52 minutes</div>
+        <div class="title">UI Prototyping with Framer.js</div>
+        <strong class="author">Jay Stakelon</strong><span>Frameless</span>
+        <div class="excerpt">Use Framer Studio to design and build responsive interactions, explore advanced animation techniques, and build data-driven UI prototypes together.</div>
+      </li>
+      <li>
+        <div class="duration">4 hours 18 minutes</div>
+        <div class="title">Learn AngularJS 1.x Application Development</div>
+        <strong class="author">Lukas Ruebbelke</strong><span>Author of AngularJS in Action</span>
+        <div class="excerpt">Learn everything from naming conventions to organizing your app into services, directives and routing with examples and challenges to anchor the concepts.</div>
+      </li>
+      <li>
+        <div class="duration">4 hours 36 minutes</div>
+        <div class="title">Learn React (with Introduction to Flux Architecture)</div>
+        <strong class="author">Ryan Florence</strong><span>React Router</span>
+        <div class="excerpt">Learn from experts how to use React and become a master at creating user interfaces by Facebook and Instagram.</div>
+      </li>
+      <li>
+        <div class="duration">4 hours 50 minutes</div>
+        <div class="title">Responsive HTML Email Design</div>
+        <strong class="author">Justine Jordan</strong><span>Litmus</span>
+        <div class="excerpt">Learn the importance of HTML email and prove that building beautiful, responsive email campaigns isn’t as scary as you thought.</div>
+      </li>
+      <li>
+        <div class="duration">9 hours 4 minutes</div>
+        <div class="title">Advanced JS Fundamentals to jQuery & Pure DOM </div>
+        <strong class="author">Justin Meyer</strong><span>Bitovi, CanJS</span>
+        <div class="excerpt">Gain an advanced JavaScript techniques and an understanding of difficult JavaScript concepts like closure, type comparators, coercion and delete.</div>
+      </li>
+      <li>
+        <div class="duration">5 hours 50 minutes</div>
+        <div class="title">Scalable Modular Architecture for CSS (SMACSS)</div>
+        <strong class="author">Jonathan Snook</strong><span>CSS Master</span>
+        <div class="excerpt">Make your CSS more maintainable and modular using Jonathan Snook's Scalable Modular Architecture for CSS (SMACSS) methodology.</div>
+      </li>
+      <li>
+        <div class="duration">7 hours 13 minutes</div>
+        <div class="title">JavaScript: From Fundamentals to Functional JS</div>
+        <strong class="author">Bianca Gandolfo</strong><span>Telegraph Academy</span>
+        <div class="excerpt">Solidify your knowledge of functional JavaScript programming, including objects, arrays, and prototypes.</div>
+      </li>
+      <li>
+        <div class="duration">5 hours 29 minutes</div>
+        <div class="title">Learn Now: JS.Next: ES6</div>
+        <strong class="author">Aaron Frost</strong><span>Domo</span>
+        <div class="excerpt">Learn the latest standard of advanced JavaScript concepts, ES6 and it's new features like destructuring, let, spread, arrow functions and modules.</div>
+      </li>
+      <li>
+        <div class="duration">5 hours 59 minutes</div>
+        <div class="title">Responsive Typography</div>
+        <strong class="author">Jason Pamental</strong><span>h & w design</span>
+        <div class="excerpt">This course explores the world of web fonts and responsive type, what web fonts are, how they work and why you should be using them.</div>
+      </li>
+      <li>
+        <div class="duration">11 hours 8 minutes</div>
+        <div class="title">Introduction to Web Development</div>
+        <strong class="author">Nina Zakharenko</strong><span>Reddit</span>
+        <div class="excerpt">With our web design courses, go from no prior coding knowledge to crafting your own websites using HTML, CSS, JavaScript, and Node.js.</div>
+      </li>
+      <li>
+        <div class="duration">5 hours 32 minutes</div>
+        <div class="title">Choosing a JavaScript Framework</div>
+        <strong class="author">Brian Holt</strong><span>Netflix</span>
+        <div class="excerpt">In this advanced JavaScript training, Brian Holt (Reddit) gives a treatise on each of the four frameworks to help you decide which one is best for you.</div>
+      </li>
+      <li>
+        <div class="duration">6 hours minutes</div>
+        <div class="title">Hardcore Functional Programming in JavaScript</div>
+        <strong class="author">Brian Lonsdorf</strong><span>SFJS Co-Organizer</span>
+        <div class="excerpt">Discover functional programming and build an example web app using abstract interfaces like Monads, Functors, Monoids and Applicatives.</div>
+      </li>
+      <li>
+        <div class="duration">5 hours 28 minutes</div>
+        <div class="title">Real-Time Web with Node.js</div>
+        <strong class="author">Kyle Simpson</strong><span>You Don't Know JS</span>
+        <div class="excerpt">Learn the HTML5 APIs for real-time such as canvas/video, sockets, getUserMedia, and WebRTC and talk to them through asynchronous code in Node.js.</div>
+      </li>
+      <li>
+        <div class="duration">6 hours 54 minutes</div>
+        <div class="title">Advanced JavaScript Classes</div>
+        <strong class="author">Kyle Simpson</strong><span>You Don't Know JS</span>
+        <div class="excerpt">Learn from Kyle Simpson, the author of "You Don't Know JavaScript" series on the inner workings of JavaScript in detail and more!</div>
+      </li>
+      <li>
+        <div class="duration">3 hours 45 minutes</div>
+        <div class="title">Building Web Apps with Node.js</div>
+        <strong class="author">Kevin Whinnery</strong><span>Twilio Node Module</span>
+        <div class="excerpt">Create node modules, use routing and templating in express, persistence data with MongoDB, use socket.io and share code on server/client with Browserify.</div>
+      </li>
+      <li>
+        <div class="duration">5 hours 14 minutes</div>
+        <div class="title">HTML5 Media: Audio, Video & WebRTC</div>
+        <strong class="author">Mark Boas</strong><span>Creator of jPlayer</span>
+        <div class="excerpt">Learn HTML5 APIs to deliver rich media including: camera support with getUserMedia, WebRTC for realtime, video effects with canvas, and Web Audio API.</div>
+      </li>
+      <li>
+        <div class="duration">5 hours 49 minutes</div>
+        <div class="title">Front-End Tooling and Workflows with Grunt and Beyond</div>
+        <strong class="author">David Mosher</strong><span>Tooling Master</span>
+        <div class="excerpt">Create a custom build process for your SPAs with Grunt.js using CSS preprocessors, live reload, concat / minifying resources and CoffeeScript all together.</div>
+      </li>
+      <li>
+        <div class="duration">5 hours 15 minutes</div>
+        <div class="title">Learn How to Animate in CSS3 and HTML5</div>
+        <strong class="author">Rachel Nabors</strong><span>Award Winning Cartoonist</span>
+        <div class="excerpt">Learn the fundamentals of animating and storytelling on the web and how to bring it to life with many hands-on HTML5 and CSS3 examples.</div>
+      </li>
+      <li>
+        <div class="duration">5 hours 31 minutes</div>
+        <div class="title">Learn Interactive Data Visualization </div>
+        <strong class="author">Ian Johnson</strong><span>Bay Area D3 and Tributary</span>
+        <div class="excerpt">The organizer of the largest d3.js meetup in the world (Bay Area d3.js), Ian Johnson, introduces and dives deep into the d3.js API in this video course.</div>
+      </li>
+      <li>
+        <div class="duration">5 hours 22 minutes</div>
+        <div class="title">Angular 1.x Essentials</div>
+        <strong class="author">Lukas Ruebbelke</strong><span>Author of AngularJS in Action</span>
+        <div class="excerpt">"AngularJS In Action" Author Lukas Ruebbelke dives into AngularJS scope, two-way data binding and directives with real-world examples.</div>
+      </li>
+      <li>
+        <div class="duration">5 hours 21 minutes</div>
+        <div class="title">Backbone.js (with Introduction to </div>
+        <strong class="author">Sam Breed</strong><span>Backbone Core Team</span>
+        <div class="excerpt">Core Contributor Sam Breed teaches you Backbone JS's lightweight approach to building client-side MVC applications and unit testing in Mocha and Sinon.JS.</div>
+      </li>
+      <li>
+        <div class="duration">6 hours 15 minutes</div>
+        <div class="title">CSS3 In-Depth</div>
+        <strong class="author">Estelle Weyl</strong><span>HTML5 & CSS3 in the Real World</span>
+        <div class="excerpt">Learn how deep the CSS3 rabbit hole goes from transitions and animations to generated content in this jam-packed video training course.</div>
+      </li>
+      <li>
+        <div class="duration">3 hours 52 minutes</div>
+        <div class="title">Web UI Architecture</div>
+        <strong class="author">Garann Means</strong><span>Engineer at Etsy</span>
+        <div class="excerpt">Garann covers considerations building JavaScript architecture for your web applications before tools and frameworks like Backbone.JS, AngularJS and Ember.</div>
+      </li>
+      <li>
+        <div class="duration">5 hours 22 minutes</div>
+        <div class="title">Lean Front-End Engineering</div>
+        <strong class="author">Bill Scott</strong><span>Sr. Director of UX at PayPal</span>
+        <div class="excerpt">Bill Scott, Sr. Director at PayPal, teaches making great UX experiences by applying lean startup principles to UI engineering.</div>
+      </li>
+      <li>
+        <div class="duration">4 hours 30 minutes</div>
+        <div class="title">Responsive Web Design Course</div>
+        <strong class="author">Ben Callahan</strong><span>Design Responsively</span>
+        <div class="excerpt">Ben Callahan leads you through this responsive web design tutorial step by step, using RWD patterns and coding with media queries and responsive CSS.</div>
+      </li>
+      <li>
+        <div class="duration">5 hours 1 minutes</div>
+        <div class="title">Master Website Performance Optimization</div>
+        <strong class="author">Kyle Simpson</strong><span>You Don't Know JS</span>
+        <div class="excerpt">Learn from Kyle as he dives deep into everything related to website performance optimization, including resource loading, thread, animations, JSON, and more!</div>
+      </li>
+      <li>
+        <div class="duration">4 hours 50 minutes</div>
+        <div class="title">JavaScript the Good Parts</div>
+        <strong class="author">Douglas Crockford</strong><span>Javascript the Good Parts</span>
+        <div class="excerpt">Take Crockford's mind-expanding JavaScript function challenges in this course on "JavaScript the Good Parts".</div>
+      </li>
+      <li>
+        <div class="duration">3 hours 13 minutes</div>
+        <div class="title">The Psychology of Code Testability</div>
+        <strong class="author">Misko Hevery</strong><span>AngularJS Creator</span>
+        <div class="excerpt">Misko, the creator of AngularJS (by Google), gives us an overview of how to write testable code and what makes code hard to test.</div>
+      </li>
+      <li>
+        <div class="duration">2 hours 36 minutes</div>
+        <div class="title">Introduction to HTML5 and CSS3</div>
+        <strong class="author">Christopher Schmitt</strong><span>HTML5 Cookbook</span>
+        <div class="excerpt">Christopher Schmitt, author of HTML5 Cookbook, covers HTML5 features such as audio, video and geolocation and then dives into many of CSS3′s features.</div>
+      </li>
+      <li>
+        <div class="duration">3 hours 26 minutes</div>
+        <div class="title">jQuery Plugins and jQuery UI</div>
+        <strong class="author">Scott Gonzalez</strong><span>jQuery UI Lead</span>
+        <div class="excerpt">Scott Gonzalez, lead developer for jQuery UI, dives into writing jQuery plugins, making plugins stateful and gives an in-depth look at jQuery UI.</div>
+      </li>
+      <li>
+        <div class="duration">3 hours 30 minutes</div>
+        <div class="title">Learning jQuery</div>
+        <strong class="author">Karl Swedberg</strong><span>Learning jQuery</span>
+        <div class="excerpt">Karl Swedberg leverages his experience on the jQuery Team to give a thorough walkthrough of the most important parts of jQuery.</div>
+      </li>
+      <li>
+        <div class="duration">3 hours 35 minutes</div>
+        <div class="title">Introduction to JavaScript and jQuery</div>
+        <strong class="author">Karl Swedberg</strong><span>Learning jQuery</span>
+        <div class="excerpt">Karl Swedberg, author of Learning jQuery, teaches the JavaScript language; including closures, anonymous functions, and implicit versus explicit iteration.</div>
+      </li>
+    </ul>
+  </div>
+
 </body>
 </html>
