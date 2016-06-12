@@ -6,8 +6,51 @@
 </head>
 <body>
 
-  <h2>Heading</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum eaque pariatur nihil doloremque maiores! Illo incidunt molestias debitis nam facilis accusamus fugit illum neque commodi, deleniti possimus laboriosam necessitatibus similique?</p>
+  <div class="container">
+  <h1>Async with Generators</h1>
+  <p class="alert alert-warning">
+    Demonstrates the effects of a generator
+  </p>
   
+  <p>
+    <button type="button" class="btn btn-primary" onclick="doGen()">Run Example 1</button>
+  </p>
+  
+  <div id="results"></div>
+
+
+</div>
+  
+
+
+
+  <script>
+  	var res = document.getElementById('results');
+
+function apiCall(time, string) {
+  var payload = {
+    string: string,
+    timeout: time
+  }
+  setTimeout(function(){gen.next(payload)}, time); 
+}
+
+function* myGenerator(){
+  var firstAPICall = yield apiCall(1000,'test');
+  res.innerHTML += ('First API call -> Latency :' + firstAPICall.timeout + ' Data :' + firstAPICall.string + '<br>');
+  var secondAPICall = yield apiCall(3200,'Second call, has first call data');
+  res.innerHTML += ('First API call -> Latency :' + secondAPICall.timeout + ' Data :' + secondAPICall.string + ' -> First call data :' + firstAPICall.string + '<br>');
+  var thirdAPICall = yield apiCall(4500,'third call, has first and second call data');
+  res.innerHTML += ('First API call -> Latency :' + thirdAPICall.timeout + ' Data :' + thirdAPICall.string + ' -> First call data :' + firstAPICall.string + ' -> Second call data :' + secondAPICall.string  + '<br>');
+}
+
+var gen = myGenerator();
+
+function doGen(){
+  var first = gen.next().value;
+  res.innerHTML += ('First next :' + first + '<br>');
+}
+
+  </script>
 </body>
 </html>
